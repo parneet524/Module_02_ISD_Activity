@@ -6,7 +6,13 @@ __version__ = "1.0.0"
 from abc import ABC, abstractmethod
 
 class Shape(ABC):
-    """Abstract base class for all shapes."""
+    """
+        Abstract base class for all shapes.
+        
+        Attributes:
+        _color (str): The color of the shape.
+
+    """
 
     def __init__(self, color: str):
         """
@@ -33,10 +39,21 @@ class Shape(ABC):
 
     @abstractmethod
     def calculate_area(self) -> float:
-        """Abstract method to calculate the area of the shape."""
+        """
+        Abstract method to calculate the area of the shape.
+        
+        Returns:
+            float: The calculated area of the shape.
+        """
         pass
 
     @abstractmethod
     def calculate_perimeter(self) -> float:
-        """Abstract method to calculate the perimeter of the shape."""
+        """
+        Abstract method to calculate the perimeter of the shape.
+        
+        Returns:
+            float: The calculated perimeter of the shape.
+        """
+        
         pass
